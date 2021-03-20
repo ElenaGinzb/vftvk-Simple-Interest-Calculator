@@ -3,6 +3,16 @@ function compute()
     p = document.getElementById("principal").value;
     r = document.getElementById("rate").value;
     y = document.getElementById("years").value;
+    if (p == "")
+    {
+        alert("Please enter principal amount")
+    }
+    else if(p < 0)
+    {
+        alert("Principal amount must be positive number")
+    }
+
+
     
     result = ((p/100)*r)*y;
     var d = new Date();
